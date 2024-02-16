@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.soc-icons{
+    right: 2%;
+    top: 50%;
+    z-index: 10;
+    transform: translate(0, -50%);
+}
+.soc-ul{
+    list-style-type: none;
+}
+.icon1{
+    transition: 0.5s;
+}
+.icon1:hover{
+    color: rgb(0, 0, 255);
+    scale: 1.1;
+}
+.overlay{
+    height: 50vh;
+    background-image: url(../imgs/bc-overlay.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.overlay-2{
+    height: 50vh;
+    background-image: url(../imgs/bc-overlay-2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.film:hover.film::after{
+    width: 100%;
+    height: 100%;
+}
+.film:hover.film::before{
+    width: 100%;
+    height: 100%;
+}
+.film::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 255, 0.22);
+    width: 0;
+    height: 0;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.film::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 255, 0.22);
+    width: 0;
+    height: 0;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.down-film{
+    transition: 0.5s;
+}
+.down-film:hover{
+    scale: 0.95;
+}
+.film-info{
+    top: 20%;
+    left: 5%;
+}
+.film-star{
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 8%;
+}
+.foot-link:hover{
+    scale: 1.03;
+    background-color: blue;
+    transition: 0.3s;
+}
+.media-link:hover{
+    scale: 1.05;
+    transition: 0.3s;
+}
+.line{
+    width: 5%;
+    height: 6px;
+    transition: 0.5s;
+}
+.branch:hover .line{
+    width: 15%;
+}
+.branch-hov:hover .branch-img{
+    scale: 1.05;
+}
+.branch-img{
+    transition: 0.3s;
+}
